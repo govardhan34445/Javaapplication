@@ -15,6 +15,9 @@ jobs:
       - name: echo "Create A dir using GitHub Actions workflow
         run: |
           mkdir githubworkflow && ls -al
+      - name: "know who is running pipeline"
+        run: |
+          whoami
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
